@@ -1,7 +1,20 @@
 ---
 title: "Baalperasim A. Matthewos"
+image: images/Profile.jpg
+about:
+  template: trestles
+  image-width: 5cm
+  image-shape: round
+  links:
+    - icon: github
+      href: https://github.com/Baalperasim
+    - icon: linkedin
+      href: https://www.linkedin.com/in/baalperasim-aschalew
 ---
 
 Hello, I’m Baalperasim! I’m a high school student who loves exploring new ideas, learning new skills, and expressing myself through writing and creativity. I’m passionate about political science and enjoy spending time with my family and friends, and reading. This is a little space where I share my journey, interests, and everyday experiences.
 
 You can also check out my CV to see more about my skill and project.
+
+
+

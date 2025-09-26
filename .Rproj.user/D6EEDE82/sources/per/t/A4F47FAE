@@ -3,9 +3,9 @@
     "path": "C:/Users/Pomi/Desktop/GitHub/Baalperasim.github.io/_quarto.yml",
     "project_path": "_quarto.yml",
     "type": "yaml",
-    "hash": "0",
+    "hash": "823547962",
     "contents": "",
-    "dirty": true,
+    "dirty": false,
     "created": 1758897356159.0,
     "source_on_save": false,
     "relative_order": 2,
@@ -16,11 +16,11 @@
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1758897352,
+    "lastKnownWriteTime": 1758897707,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1758897389315,
+    "last_content_update": 1758897707769,
     "read_only": false,
     "read_only_alternatives": []
 }

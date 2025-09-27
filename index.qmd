@@ -14,7 +14,4 @@ about:
 
 Hi, I’m Baalperasim! I’m a high school student who loves exploring new ideas, learning new skills, and expressing myself through writing and creativity. I’m passionate about political science and enjoy spending time with my family and friends, and reading. This is a little space where I share my journey, interests, and everyday experiences.
 
-You can also check out my CV to see more about my skill and project.
-
-
-
+You can also check out my <a href="/cv/cv.webp" target="_blank">CV</a> to see more about my skill and project.

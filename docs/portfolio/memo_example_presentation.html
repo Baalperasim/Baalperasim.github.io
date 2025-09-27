@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Understanding Wildfires in 2023</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    /* Simple clean styling so it looks like a report */
+    :root{
+      --maxw: 900px;
+      --accent: #2b6cb0;
+      --muted: #666;
+      --sans: "Helvetica Neue", Arial, sans-serif;
+    }
+    body{
+      font-family: var(--sans);
+      color: #222;
+      line-height: 1.6;
+      background: #fff;
+      padding: 40px 18px;
+      display: flex;
+      justify-content: center;
+    }
+    .container{
+      max-width: var(--maxw);
+      width: 100%;
+    }
+    header h1{ font-size: 34px; margin:0 0 6px; }
+    header .subtitle{ color:var(--muted); margin-bottom: 18px; font-size: 16px; }
+    header .meta{ color:var(--muted); font-size:13px; margin-bottom: 24px; }
+    nav.toc{
+      border-left: 3px solid #eee;
+      padding-left: 12px;
+      margin: 6px 0 26px 0;
+    }
+    nav.toc ul{ margin:0; padding-left: 14px; }
+    nav.toc a{ color:var(--accent); text-decoration:none; }
+    section{ margin-bottom: 28px; }
+    h2{ color:#111; margin-top: 20px; }
+    .lead{ color: #333; margin-bottom: 10px; }
+    footer{ margin-top: 40px; font-size:12px; color:var(--muted); border-top:1px solid #eee; padding-top:14px;}
+    .small{ font-size:13px; color:var(--muted); }
+    @media (max-width:600px){
+      body{ padding:18px 12px; }
+      header h1{ font-size: 26px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Understanding Wildfires in 2023</h1>
+      <div class="subtitle">Spatial clustering using satellite imagery</div>
+      <div class="meta">Author: Your Name — <span class="small">Memo — 2023</span></div>
+    </header>
+
+    <!-- Table of contents (internal links) -->
+    <nav class="toc" aria-label="Table of contents">
+      <strong>Table of contents</strong>
+      <ul>
+        <li><a href="#intro">1 Intro</a></li>
+        <li><a href="#data">2 Data</a></li>
+        <li><a href="#analysis">3 Analyzing Spatial Clusters</a></li>
+        <li><a href="#conclusion">4 Conclusion</a></li>
+        <li><a href="#appendix">5 Appendix</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="intro">
+        <h2>1 Intro</h2>
+        <p class="lead">
+          In 2023 there was a notable increase in wildfire activity across many regions. This memo provides an overview of where fires occurred,
+          the data sources used, and a short spatial cluster analysis to identify hotspots that can inform monitoring and response.
+        </p>
+      </section>
+
+      <section id="data">
+        <h2>2 Data</h2>
+        <p>
+          The analysis uses satellite-derived burned-area products (e.g., MODIS MCD64A1, VIIRS) aggregated to monthly grids.
+          For each grid cell we record burn occurrence, date-of-burn, and a small set of covariates (vegetation, elevation, land cover).
+        </p>
+        <p class="small">Data sources: MODIS MCD64A1; Terra/Aqua burned-area composites; ancillary landcover datasets.</p>
+      </section>
+
+      <section id="analysis">
+        <h2>3 Analyzing Spatial Clusters</h2>
+        <p>
+          To detect spatial clustering we use a local indicator (e.g., Local Gi* or Getis-Ord) computed on the burned-area intensity.
+          Areas with statistically significant high values are reported as hotspots.
+        </p>
+
+        <h3>3.1 Method</h3>
+        <p>
+          The steps were: (1) aggregate burned area to 0.05° grid cells; (2) compute a normalized burn intensity; (3) compute local Gi* with spatial weights based on queen contiguity.
+        </p>
+
+        <h3>3.2 Results (example)</h3>
+        <p>
+          Hotspots were identified in several regions. A simple mapping step (not included here) highlights clusters in the sample study area.
+        </p>
+      </section>
+
+      <section id="conclusion">
+        <h2>4 Conclusion</h2>
+        <p>
+          In summary, satellite-derived burned-area products provide timely estimates of fire occurrence and allow localization of high-burn clusters.
+          Continued monitoring with these methods can support rapid situational awareness for decision-makers.
+        </p>
+      </section>
+
+      <section id="appendix">
+        <h2>5 Appendix</h2>
+        <p class="small">
+          To reproduce: download MODIS burned-area for the target year, pre-process to a common grid, calculate burn intensity per cell,
+          then compute local Gi* using your preferred spatial analysis library (e.g., R `spdep`, `sf` or Python `libpysal`).
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="small">This is an example memo page. Replace the content with your own text, figures, and results.</div>
+    </footer>
+  </div>
+</body>
+</html>

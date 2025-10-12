@@ -1,0 +1,11 @@
+---
+title: "Research"
+format: html
+editor: visual
+---
+
+You can check out some of the projects that I conducted.
+
+<ul>
+
+<li><a href="Research/Mile_stone2.pdf" target="_blank">Research</a></li>

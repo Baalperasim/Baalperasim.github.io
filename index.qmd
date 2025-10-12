@@ -9,7 +9,7 @@ about:
     - icon: github
       href: https://github.com/Baalperasim
     - icon: linkedin
-      href: https://www.linkedin.com/in/baalperasim-aschalew
+      href: https://www.linkedin.com/in/baalperasim-aschalew-6856a1335?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
 ---
 
 Hi, I’m Baalperasim! I’m a high school student who loves exploring new ideas, learning new skills, and expressing myself through writing and creativity. I’m passionate about political science and enjoy spending time with my family and friends, and reading. This is a little space where I share my journey, interests, and everyday experiences.

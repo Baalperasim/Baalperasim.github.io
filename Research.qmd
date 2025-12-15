@@ -8,4 +8,4 @@ You can check out some of the projects that I conducted.
 
 <ul>
 
-<li><a href="C:/Users/Pomi/Desktop/Baalperasim.github.io/Research" target="_blank">Research</a></li>
+<li><a href="Research/Revised_Final_Paper.pdf" target="_blank">Research</a></li>

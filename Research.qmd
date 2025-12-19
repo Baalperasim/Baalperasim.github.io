@@ -6,7 +6,7 @@ editor: visual
 
 You can check out some of the projects that I conducted.
 
--   <ul>
+<ul>
 
 <li><a href="Research/Revised_Final_Paper.pdf" target="_blank">Research</a></li>
 
